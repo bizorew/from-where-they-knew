@@ -1,0 +1,51 @@
+{
+  "id": "7af57128-42fa-4253-ac08-3c6019d0f2ef",
+  "title": "Are Large Language Models Temporally Grounded?",
+  "year": 2023,
+  "publication_date": "2023-11-14",
+  "type": "research article",
+  "language": "English",
+  "online_link": "https://arxiv.org/pdf/2311.08398",
+  "amazon_link": null,
+  "authors": [
+    {
+      "id": "33036a7d-b679-4cad-b679-aafa5aa6a5b3",
+      "name": "Yifu Qiu",
+      "full_name": "Yifu Qiu"
+    },
+    {
+      "id": "f7d21ce9-9ec3-4f3b-a726-c2dfae19065c",
+      "name": "Zheng Zhao",
+      "full_name": "Zheng Zhao"
+    },
+    {
+      "id": "8ca9c450-f089-4203-b4a7-b6a8334915d0",
+      "name": "Yftah Ziser",
+      "full_name": "Yftah Ziser"
+    },
+    {
+      "id": "5c7e714e-3900-43e8-8bff-4ae55c4cb46b",
+      "name": "Anna Korhonen",
+      "full_name": "Anna Korhonen"
+    },
+    {
+      "id": "9d9b4bb2-588f-4e53-81cf-7fc54506c8d3",
+      "name": "Edoardo M. Ponti",
+      "full_name": "Edoardo M. Ponti"
+    },
+    {
+      "id": "eec6d90a-a9c9-40d8-9d41-03f2e48eaacf",
+      "name": "Shay B. Cohen",
+      "full_name": "Shay B. Cohen"
+    }
+  ],
+  "publisher": {
+    "id": "0a38c39c-2964-48ca-8617-fe52db0271ec",
+    "name": "https://arxiv.org/"
+  },
+  "ISBN_13": null,
+  "ISBN_10": null,
+  "additional_info": {
+    "genre": "research article"
+  }
+}
