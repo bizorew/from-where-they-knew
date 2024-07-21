@@ -1,0 +1,73 @@
+"""
+uuids_generator.py
+------------------
+
+This module contains a function `manage_entries` that manages entries of names and UUIDs.
+
+Imports:
+    uuid: This module is used to generate unique identifiers.
+    json: This module is used to work with JSON data.
+
+Constants:
+    FILENAME: The name of the file where entries are stored.
+
+Functions:
+    manage_entries(name: str) -> str:
+        Manages entries of names and UUIDs.
+
+        Parameters:
+            name (str): The name for the new entry.
+
+        Returns:
+            str: A message indicating whether a new entry was created or an existing entry was found.
+
+        The function works as follows:
+        - It tries to load existing entries from a file. If the file doesn't exist, it starts with an empty dictionary.
+        - If the provided name exists in the entries, it returns a message with the existing entry.
+        - If the name does not exist, it generates a new UUID. If the UUID exists but the name is new, it generates a new UUID until it gets a unique one.
+        - It creates a new entry with the unique name and UUID.
+        - It writes the updated entries back to the file.
+        - It returns a message indicating whether a new entry was created or an existing entry was found.
+"""
+
+import uuid
+import json
+
+FILENAME = 'entries.json'
+
+def manage_entries(name):
+    """
+    Manages entries of names and UUIDs.
+
+    Parameters:
+        name (str): The name for the new entry.
+
+    Returns:
+        str: A message indicating whether a new entry was created or an existing entry was found.
+    """
+    # Load existing entries from file
+    try:
+        with open(FILENAME, 'r') as f:
+            entries = json.load(f)
+    except FileNotFoundError:
+        entries = {}
+
+    # If name exists, return existing entry
+    if name in entries:
+        return f"Existing entry: {name} - {entries[name]}"
+
+    # Generate new UUID
+    new_uuid = str(uuid.uuid4())
+
+    # If UUID exists but name is new, generate new UUID until unique
+    while new_uuid in entries.values():
+        new_uuid = str(uuid.uuid4())
+
+    # Create new entry with unique name and UUID
+    entries[name] = new_uuid
+
+    # Write entries back to file
+    with open(FILENAME, 'w') as f:
+        json.dump(entries, f)
+
+    return f"New entry created: {name} - {new_uuid}"
