@@ -1,0 +1,56 @@
+{
+  "id": "c40785e5-18f5-4864-96f0-ee812ccc4cb6",
+  "title": "DISSOCIATING LANGUAGE AND THOUGHT IN LARGE LANGUAGE MODELS",
+  "year": 2024,
+  "publication_date": "2024-04-14",
+  "type": "research article",
+  "language": "English",
+  "online_link": "https://arxiv.org/pdf/2301.06627",
+  "amazon_link": null,
+  "authors": [
+    {
+      "id": "",
+      "name": "Kyle Mahowald",
+      "full_name": "Kyle Mahowald"
+    },
+    {
+      "id": "",
+      "name": "Idan A. Blank",
+      "full_name": "Idan A. Blank"
+    },
+    {
+      "id": "",
+      "name": "Joshua B. Tenenbaum",
+      "full_name": "Joshua B. Tenenbaum"
+    },
+    {
+      "id": "",
+      "name": "",
+      "full_name": ""
+    },
+    {
+      "id": "",
+      "name": "Anna A. Ivanova",
+      "full_name": "Anna A. Ivanova"
+    },
+    {
+      "id": "",
+      "name": "Nancy Kanwisher",
+      "full_name": "Nancy Kanwisher"
+    },
+    {
+      "id": "",
+      "name": "Evelina Fedorenko",
+      "full_name": "Evelina Fedorenko"
+    }
+  ],
+  "publisher": {
+    "id": "0a38c39c-2964-48ca-8617-fe52db0271ec",
+    "name": "https://arxiv.org/"
+  },
+  "ISBN_13": null,
+  "ISBN_10": null,
+  "additional_info": {
+    "genre": "research article"
+  }
+}
