@@ -1,84 +1,98 @@
 [
   {
     "Author": {
+      "id": str(uuid.uuid4()),
       "Name": "Jozef Kelemen",
       "Alternative names": []
     }
   },
   {
     "Author": {
+      "id": str(uuid.uuid4()),
       "Name": "Milan Ftacnik",
       "Alternative names": ["Milan Ftáčnik"]
     }
   },
   {
     "Author": {
+      "id": str(uuid.uuid4()),
       "Name": "Ivan Kalas",
       "Alternative names": ["Ivan Kalaš"]
     }
   },
   {
     "Author": {
+      "id": str(uuid.uuid4()),
       "Name": "Peter Mikulecky",
       "Alternative names": ["Peter Mikulecký"]
     }
   },
   {
     "Author": {
+      "id": str(uuid.uuid4()),
       "Name": "Wolfgang Kempelen",
       "Alternative names": ["Johann Wolfgang von Kempelen", "Johann Wolfgang"]
     }
   },
   {
     "Author": {
+      "id": str(uuid.uuid4()),
       "Name": "Alan Turing",
       "Alternative names": ["Alan M. Turing", "Alan Mathison Turing"]
     }
   },
   {
     "Author": {
+      "id": str(uuid.uuid4()),
       "Name": "Samuel Butler",
       "Alternative names": []
     }
   },
   {
     "Title": {
+      "id": str(uuid.uuid4()),
       "Name": "Zaklady umelej inteligencie",
       "Alternative names": []
     }
   },
   {
     "Title": {
+      "id": str(uuid.uuid4()),
       "Name": "Computing Machinery and Intelligence",
       "Alternative names": []
     }
   },
   {
     "Title": {
+      "id": str(uuid.uuid4()),
       "Name": "Erewhon",
       "Alternative names": ["Erewhon: or, Over the Range"]
     }
   },
   {
     "Publisher": {
+      "id": str(uuid.uuid4()),
       "Name": "Trübner and Ballantyne",
       "Alternative names": []
     }
   },
   {
     "Publisher": {
+      "id": str(uuid.uuid4()),
       "Name": "ALFA",
       "Alternative names": []
     }
   },
   {
     "Publisher": {
+      "id": str(uuid.uuid4()),
       "Name": "Oxford University Press",
       "Alternative names": []
     }
   },
   {
     "Book": {
+      "id": str(uuid.uuid4()),
       "Reference": "JozefKelemenZakladyUmelejInteligencie1992",
       "Editors": ["Jozef Kelemen"],
       "Authors": ["Jozef Kelemen", "Milan Ftacnik", "Ivan Kalas", "Peter Mikulecky"],
@@ -91,6 +105,7 @@
   },
   {
     "Article": {
+      "id": str(uuid.uuid4()),
       "Reference": "AlanTuringComputingMachineryandIntelligence1950",
       "Authors": ["Alan Turing"],
       "Title": "Computing Machinery and Intelligence",
@@ -109,6 +124,7 @@
   },
   {
     "Book": {
+      "id": str(uuid.uuid4()),
       "Reference": "SamuelButlerErewhon1872",
       "Editors": [],
       "Authors": ["Samuel Butler"],
@@ -125,6 +141,7 @@
   },
   {
     "Chapter": {
+      "id": str(uuid.uuid4()),
       "Reference": "SamuelButlerErewhon1872ch232425",
       "Title": "The Book of the Machines",
       "Chapter Numbers": ["23", "24", "25"]
@@ -132,12 +149,14 @@
   },
   {
     "topconnection": {
+      "id": str(uuid.uuid4()),
       "Reference": "AlanTuringComputingMachineryandIntelligence1950",
       "Referenced": "SamuelButlerErewhon1872"
     }
   },
   {
     "midconnection": {
+      "id": str(uuid.uuid4()),
       "Reference": "SamuelButlerErewhon1872ch232425",
       "Referenced": "SamuelButlerErewhon1872"
     }
