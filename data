@@ -24,10 +24,12 @@
 {"Tittle":["Zaklady umelej inteligencie","Základy umelej inteligencie"]};
 {"Tittle":"Computing Machinery and Intelligence"};
 {"Tittle":"Erewhon"};
-{"Chapter":{"Reference":"SamuelButlerErewhon1872","Tittle":"The Book of the Machines","Number":["23","24","25"]}};
 {"Publisher":"Trübner and Ballantyne"};
 {"Publisher":["ALFA","Vydavatelstvo ALFA","Vydavateľstvo ALFA"]};
 {"Publisher":"Oxford University Press"};
-{"Book":{"Reference":"JozefKelemenZakladyUmelejInteligencie1992","Editor":"Jozef Kelemen","Authors":["Jozef Kelemen","Milan Ftáčnik","Ivan Kalaš","Peter Mikulecký"],"Tittle":["Zaklady umelej inteligencie","Základy umelej inteligencie"],"Publisher":"Vydavateľstvo ALFA","Release Year":"1992","ISBN":"80-05-00957-7"};
-{"Book":{"Reference":"SamuelButlerErewhon1872","Editor":"","Authors":["Samuel Butler"],"Tittle":["Erewhon","Erewhon: or, Over the Range",""],"Publisher":"Trübner and Ballantyne","Release Year":"1872","ISBN":"","links":{"wiki":"https://en.wikipedia.org/wiki/Erewhon","fulltext":"https://www.marxists.org/reference/archive/butler-samuel/1872/erewhon/index.htm"}};
+{"Book":{"Reference":"JozefKelemenZakladyUmelejInteligencie1992","Editors":["Jozef Kelemen"],"Authors":["Jozef Kelemen","Milan Ftáčnik","Ivan Kalaš","Peter Mikulecký"],"Tittle":["Zaklady umelej inteligencie","Základy umelej inteligencie"],"Publisher":"Vydavateľstvo ALFA","Release Year":"1992","ISBN":"80-05-00957-7"};
 {"Article":{"Reference":"AlanTuringComputingMachineryandIntelligence1950","Authors":"Alan Turing","Tittle":"Computing Machinery and Intelligence","Publisher":"Oxford University Press","Journal":"Mind","Release Year":"1950","links":{"wiki":"https://en.wikipedia.org/wiki/Computing_Machinery_and_Intelligence","fulltext":["https://phil415.pbworks.com/f/TuringComputing.pdf","https://www.csee.umbc.edu/courses/471/papers/turing.pdf"]}}};
+{"Book":{"Reference":"SamuelButlerErewhon1872","Editors":[""],"Authors":["Samuel Butler"],"Tittle":["Erewhon","Erewhon: or, Over the Range",""],"Publisher":"Trübner and Ballantyne","Release Year":"1872","ISBN":"","links":{"wiki":"https://en.wikipedia.org/wiki/Erewhon","fulltext":"https://www.marxists.org/reference/archive/butler-samuel/1872/erewhon/index.htm"}};
+{"Chapter":{"Reference":"SamuelButlerErewhon1872ch232425","Tittle":"The Book of the Machines","Chapter Numbers":["23","24","25"]}};
+{"topconnection":{"Reference":"AlanTuringComputingMachineryandIntelligence1950","Referenced":"SamuelButlerErewhon1872"}};
+{"midconnection":{"Reference":"SamuelButlerErewhon1872ch232425","Referenced":"SamuelButlerErewhon1872"}};
