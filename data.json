@@ -1,4 +1,4 @@
-[
+data = [
     {
         "Author": {
             "id": str(uuid.uuid4()),
@@ -49,6 +49,13 @@
         }
     },
     {
+        "Author": {
+            "id": str(uuid.uuid4()),
+            "Name": "Gottfried Leibniz",
+            "Alternative names": ["Gottfried Wilhelm Leibniz","G. W. Leibniz"]
+        }
+    },
+    {
         "Publisher": {
             "id": str(uuid.uuid4()),
             "Name": "Trübner and Ballantyne",
@@ -70,6 +77,13 @@
         }
     },
     {
+        "Publisher": {
+            "id": str(uuid.uuid4()),
+            "Name": "Svoboda",
+            "Alternative names": []
+        }
+    },
+    {
         "Book": {
             "id": str(uuid.uuid4()),
             "Reference": "JozefKelemenZakladyUmelejInteligencie1992",
@@ -79,22 +93,67 @@
             "Alternative Titles": [],
             "Publisher": "ALFA",
             "Release Year": "1992",
-            "ISBN": "80-05-00957-7"
-        },
+            "ISBN": "80-05-00957-7",
+            "links": {
+                "wiki": "example.com",
+                "fulltext": [
+                    "example.org"
+                ]
+            },
             "Chapters": [
+                {
+                    "id": str(uuid.uuid4()),
+                    "Reference": "JozefKelemenZakladyUmelejInteligencie1992Uvod",
+                    "ReferencedIn": "",
+                    "ReferencedTo": "AlanTuringComputingMachineryandIntelligence1950",
+                    "Title": "Uvod",
+                    "Chapter Numbers": ["1"]
+                },
                 {
                     "id": str(uuid.uuid4()),
                     "Reference": "JozefKelemenZakladyUmelejInteligencie1992UmelaInteligenciaaPoznatky",
                     "ReferencedIn": "",
+                    "ReferencedTo": "",
                     "Title": "Umela Inteligencia a Poznatky",
                     "Chapter Numbers": ["2"]
-                }
+                },
+                                {
+                    "id": str(uuid.uuid4()),
+                    "Reference": "JozefKelemenZakladyUmelejInteligencie1992FormalnaLogikaaDokazovanieTeorem",
+                    "ReferencedIn": "",
+                    "ReferencedTo": "",
+                    "Title": "Formalna Logika a Dokazovanie Teorem",
+                    "Chapter Numbers": ["3"]
+                },
             ]
+        }
+    },
+    {
+        "Book": {
+            "id": str(uuid.uuid4()),
+            "Reference": "MonadologieaJinePrace",
+            "ReferencedIn": "JozefKelemenZakladyUmelejInteligencie1992",
+            "Editors": [""],
+            "Authors": ["Gottfried Leibniz"],
+            "Title": "Monadologie a jine prace",
+            "Alternative Titles": [],
+            "Publisher": "Svoboda",
+            "Release Year": "1982",
+            "ISBN": "",
+            "links": {
+                "wiki": "https://en.wikipedia.org/wiki/Monadology",
+                "fulltext": [
+                    "https://is.muni.cz/el/1421/podzim2010/PH0185/um/Leibniz_-_Monadologie_a_jine_prace.pdf",
+                    "https://ia903402.us.archive.org/22/items/monadologyotherp00gott/monadologyotherp00gott.pdf"
+                ]
+            }
+        }
     },
     {
         "Article": {
             "id": str(uuid.uuid4()),
             "Reference": "AlanTuringComputingMachineryandIntelligence1950",
+            "ReferencedIn": "JozefKelemenZakladyUmelejInteligencie1992",
             "Authors": ["Alan Turing"],
             "Title": "Computing Machinery and Intelligence",
             "Alternative Titles": [],
@@ -114,6 +173,7 @@
         "Book": {
             "id": str(uuid.uuid4()),
             "Reference": "SamuelButlerErewhon1872",
+            "ReferencedIn": "AlanTuringComputingMachineryandIntelligence1950",
             "Editors": [],
             "Authors": ["Samuel Butler"],
             "Title": "Erewhon",
@@ -130,6 +190,7 @@
                     "id": str(uuid.uuid4()),
                     "Reference": "SamuelButlerErewhon1872TheBookOfMachines",
                     "ReferencedIn": "AlanTuringComputingMachineryandIntelligence1950",
+                    "ReferencedTo": "",
                     "Title": "The Book of the Machines",
                     "Chapter Numbers": ["23", "24", "25"]
                 }
